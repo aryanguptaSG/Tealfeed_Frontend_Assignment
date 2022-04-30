@@ -5,7 +5,8 @@ function MatchCard({
     firstTeam,
     secondTeam,
     index,
-    date
+    date,
+    winner = null
 }) {
     const [firstName, setfirstName] = useState("");
     const [secondName, setsecondName] = useState("");
@@ -31,6 +32,11 @@ function MatchCard({
                 marginBottom: "5px"
             }}>{firstName}</div>
             <div>{secondName}</div>
+            <div
+                style={{
+                    marginTop: "10px",
+                }}
+            >{winner ? `Winner Of The Match Is ' ${shortTheName(winner)} '` : "Upcoming Match"}</div>
         </div>
     )
 }

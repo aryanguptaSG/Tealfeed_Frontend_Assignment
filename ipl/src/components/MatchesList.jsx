@@ -16,6 +16,7 @@ function MatchesList({
                                 secondTeam={item.team2}
                                 date={item.date}
                                 index={id + 1}
+                                winner={item.winner}
                             />
                         )
                     })
